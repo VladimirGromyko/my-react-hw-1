@@ -1,0 +1,59 @@
+.message {
+    width: 40%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background: #bff8ab;
+    border: 1px solid #bff8ab;
+    padding: 5px;
+}
+.avatar {
+    display: flex;
+    height: 150px;
+    padding: 10%;
+    justify-content: center;
+    align-items: self-end;
+}
+.photo {
+    height: 60%;
+    border-radius: 50pt;
+    padding: 15px;
+}
+.textMessage {
+    display: flow
+}
+.text {
+    position: relative;
+    z-index: 2;
+    top: -100px;
+    left: 50px;
+    width: 87%;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    background: #459d0b;
+    height: 85%;
+    border-radius: 10px;
+    font-size: 4vh;
+    color: #fff;
+}
+.name {
+    color: #c6c4f0;
+}
+.time {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: self-end;
+    font-size: 3vh;
+    color: #bff8ab;
+}
+
+.corner {
+    position: relative;
+    bottom: -53px;
+    z-index: 1;
+    padding: 3px;
+    height: auto;
+    justify-content: end;
+    align-items: self-end;
+}

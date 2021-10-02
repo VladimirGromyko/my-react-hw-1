@@ -1,0 +1,18 @@
+.hw3{
+    background-color: palegreen;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 4fr 1fr 1fr;
+    width: 30%;
+}
+
+.someClass {
+    border: 1px solid blue;
+}
+
+.error {
+    border: 1px solid red;
+}
+.message {
+    color: red;
+}
