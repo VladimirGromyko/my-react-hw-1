@@ -1,3 +1,23 @@
 .App {
     background: #fbfffd;
 }
+
+/*
+.spanClass {
+    width: 15%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('/src/p2-homeworks/h6/common/c4-SuperEditableSpan/pen.png');
+    background-position: 0px 3px;
+    background-repeat: no-repeat;
+    padding: 6px 20px 6px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.spanClass:focus {
+    width: 30%;
+}*/

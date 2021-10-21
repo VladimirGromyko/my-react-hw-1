@@ -17,7 +17,8 @@
     --group-background-focus: #678EFE;
 
 }
-.superInput {
+
+/*.superInput {
 
 
     display: block;
@@ -25,20 +26,68 @@
     padding: 2px 16px;
     line-height: 20px;
     font-size: 14px;
-    /*font-weight: 500;*/
-    /*font-family: inherit;*/
+    !*font-weight: 500;*!
+    !*font-family: inherit;*!
     border-radius: 6px;
-    /*-webkit-appearance: none;*/
+    !*-webkit-appearance: none;*!
     color: var(--input-color);
     border: 1px solid var(--input-border);
     background: var(--input-background);
     transition: border .3s ease;
+}*/
+
+.superInput {
+
+    width: 15%;
+    /*box-sizing: border-box;*/
+
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('/src/p2-homeworks/h6/common/c4-SuperEditableSpan/pen.png');
+    background-position: 0px 3px;
+    background-repeat: no-repeat;
+    padding: 6px 20px 6px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
+
+.superInput:focus {
+    width: 20%;
+}
+
+
+.spanClass {
+    display: inline-block;
+    width: 10%;
+    height: 18px;
+    cursor: pointer;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 16px;
+    font-palette: dark;
+    background-color: white;
+    background-image: url('/src/p2-homeworks/h6/common/c4-SuperEditableSpan/pen.png');
+    background-position: 0px 3px;
+    background-repeat: no-repeat;
+    /*margin-outside: 30px;*/
+    padding: 6px 20px 6px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.spanClass:focus {
+    width: 20%;
+}
+
+
 .errorInput {
     font-size: 14px;
     border: 3px solid red;
     background: var(--group-background);
 }
+
 .error {
     color: red;
 }
