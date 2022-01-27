@@ -1,5 +1,6 @@
 import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent} from 'react'
 import s from './SuperSelect.module.css'
+import styled from "styled-components";
 
 
 type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>
@@ -19,25 +20,34 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
     // const mappedOptions: any[] = []; // map options with key
     const mappedOptions: any[] = options ? options.map((o, i) => {
         return <option key={restProps.name + '-' + i}
-                       selected={restProps.value === o}>{o}
+            /*selected={restProps.value === o}*/
+                       value={o}
+                       style={{background: '#EEF4FF'}}
+        >{o}
         </option>
     }) : [];
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        debugger
-        if (onChangeOption) {
-            onChangeOption(e.currentTarget.value)
-            // onChange, onChangeOption
-        }
+        onChange && onChange(e)
+        onChangeOption && onChangeOption(e.currentTarget.value)
+        // onChange, onChangeOption
+
     }
 
-    return (
-        <select
-            className={s.superSelect}
-            onChange={onChangeCallback} {...restProps}>
-            {mappedOptions}
-        </select>
+    return (<div>
+            <select
+                className={s.superSelect}
+                onChange={onChangeCallback} {...restProps}>
+                {mappedOptions}
+            </select>
+            <StyledCompSelect>
+            </StyledCompSelect>
+        </div>
     )
 }
-
+let StyledCompSelect = styled.div`
+  width: 100px;
+  height: 10px;
+  background-color: bisque;
+`
 export default SuperSelect

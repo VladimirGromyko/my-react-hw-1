@@ -1,6 +1,6 @@
 .default {
     display: block;
-    width: 7%;
+    width: 10ch;
     background: var(--group-background-focus);
     border-radius: 4px;
     font-size: 16px;
@@ -14,7 +14,7 @@
 }
 .dis:disabled {
     display: block;
-    width: 7%;
+    width: 10ch;
     background: var(--input-border);
     border: 1px solid var(--group-background-focus);
     color: #889792;
@@ -24,7 +24,8 @@
 .red {
 
     display: block;
-    width: 7%;
+    /*width: 7%;*/
+    width: 10ch;
     background: coral;
     font-size: 16px;
     border-radius: 4px;

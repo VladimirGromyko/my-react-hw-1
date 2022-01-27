@@ -1,0 +1,14 @@
+.human{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-between;
+    margin: 1px 5px 1px 15px;
+}
+.sortAndCheckButtons {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
