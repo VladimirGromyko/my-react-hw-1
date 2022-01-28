@@ -1,0 +1,17 @@
+.currentDate{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 25px;
+    /*background-color: #99ff99;*/
+    margin: 5px 1px 1px 5px;
+}
+.buttonBlock {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 25px;
+    /*background-color: #99ff99;*/
+    margin: 5px 1px 1px 5px;
+    justify-content: space-between;
+}
