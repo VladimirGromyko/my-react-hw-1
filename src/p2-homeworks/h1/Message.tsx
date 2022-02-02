@@ -14,10 +14,10 @@ function Message(props: PropsType) {
     return (
         <div className={s.message}>
             <div className={s.avatar}>
-                <img className={s.photo} src={props.avatar}/>
+                <img className={s.photo} src={props.avatar} alt={''}/>
             </div>
             <div className={s.textMessage}>
-                <div className={s.corner}><img src={corner}/></div>
+                <div className={s.corner}><img src={corner} alt={''}/></div>
                 <div className={s.text}>
                     <div>
                         <div className={s.name}>{props.name}</div>

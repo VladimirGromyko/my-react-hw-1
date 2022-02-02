@@ -2,7 +2,7 @@ import React from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "./bll/store";
-import {loadingAC, LoadingStateType} from "./bll/loadingReducer";
+import {loadingAC} from "./bll/loadingReducer";
 import s from "../h10/_loader/loader07.module.css"
 import style from "../h10/HW10.module.css"
 

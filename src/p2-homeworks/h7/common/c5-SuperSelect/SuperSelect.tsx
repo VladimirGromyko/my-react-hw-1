@@ -48,6 +48,6 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
 let StyledCompSelect = styled.div`
   width: 100px;
   height: 10px;
-  background-color: bisque;
+  background-color: white;
 `
 export default SuperSelect

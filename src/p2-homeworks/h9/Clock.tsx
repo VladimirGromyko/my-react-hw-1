@@ -1,10 +1,10 @@
-import React, {useCallback, useState} from 'react'
+import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import s from '../h9/HW9.module.css'
 
 const Clock = () => {
 
-    const formatDate = (date: Date) => {
+/*    const formatDate = (date: Date) => {
 
         let dd = String(date.getDate()).padStart(2, '0');
         let mm = String(date.getMonth() + 1).padStart(2, '0')
@@ -20,7 +20,7 @@ const Clock = () => {
         // //if (yy < 10) yy = '0' + yy;
 
         return dd + '.' + mm + '.' + yyyy;
-    }
+    }*/
 
     let initialDate = () => new Date()
     const [timerId, setTimerId] = useState<number>(0)
@@ -47,7 +47,8 @@ const Clock = () => {
         setShow(false)
     }
     let stringTime = date.toLocaleTimeString()
-    const stringDate = date && date.toLocaleDateString()//formatDate(date)//'Date' // fix with date
+
+    const stringDate = date && date.toLocaleDateString()
 
     return (
         <div>
