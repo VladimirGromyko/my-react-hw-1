@@ -1,14 +1,24 @@
-const initState = {
+import {ThemesNameType} from "../HW12";
 
+const initState: stateThemeType = {
+    themesName: 'some'
 };
+export type stateThemeType = {
+    themesName: ThemesNameType
+}
 
-export const themeReducer = (state = initState, action: any): any => { // fix any
+export const themeReducer = (state: stateThemeType = initState,
+                             action: changeThemeACType): stateThemeType => {
     switch (action.type) {
-        case "": {
-            return state;
+        case "CHANGE-THEME": {
+            return {...state, themesName: action.theme};
         }
-        default: return state;
+        default:
+            return state;
     }
 };
 
-export const changeThemeC = (): any => {}; // fix any
+export const changeThemeAC = (theme:ThemesNameType) => ({
+    type: 'CHANGE-THEME', theme
+} as const);
+type changeThemeACType = ReturnType<typeof changeThemeAC>

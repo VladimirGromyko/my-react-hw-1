@@ -15,7 +15,7 @@ function HW11() {
     return (
         <div>
             <hr/>
-            homeworks 11
+            <h3>homeworks 11</h3>
 
             {/*should work (должно работать)*/}
             <div className={s.slider}>
