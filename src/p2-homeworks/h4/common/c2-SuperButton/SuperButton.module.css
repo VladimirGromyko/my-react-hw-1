@@ -1,6 +1,7 @@
 .default {
     display: block;
     width: 10ch;
+    /*height: 2vmin;*/
     background: var(--group-background-focus);
     border-radius: 4px;
     font-size: 16px;

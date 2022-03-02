@@ -1,11 +1,14 @@
 import {ThemesNameType} from "../HW12";
 
-const initState: stateThemeType = {
-    themesName: 'some'
-};
+
+
 export type stateThemeType = {
     themesName: ThemesNameType
 }
+const initState: stateThemeType = {
+    themesName: 'some'
+};
+
 
 export const themeReducer = (state: stateThemeType = initState,
                              action: changeThemeACType): stateThemeType => {

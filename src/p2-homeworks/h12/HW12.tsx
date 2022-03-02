@@ -20,11 +20,11 @@ function HW12() {
 
         <div className={s[theme.themesName]}>
             <hr/>
-            <span className={s[theme + '-text']}>
+            <span className={s[theme.themesName + '-text']}>
                 <h3>homeworks 12</h3>
+                <h4>Themes of screen</h4>
             </span>
             <div>
-                <div><h4>Themes of screen</h4></div>
                 <SuperRadio
                     name={'radio'}
                     options={themes}
