@@ -20,7 +20,6 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
     // const mappedOptions: any[] = []; // map options with key
     const mappedOptions: any[] = options ? options.map((o, i) => {
         return <option key={restProps.name + '-' + i}
-            /*selected={restProps.value === o}*/
                        value={o}
                        style={{background: '#EEF4FF'}}
         >{o}

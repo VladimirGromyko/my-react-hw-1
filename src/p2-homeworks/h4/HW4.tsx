@@ -47,7 +47,8 @@ function HW4() {
                     red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
-                    delete {/*// название кнопки попадёт в children*/}
+                    delete
+                    {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
                 <SuperButton disabled dis>
