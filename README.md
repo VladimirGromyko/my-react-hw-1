@@ -5,4 +5,4 @@ Technologies: CSS, JavaScript, TypeScript, React, Redux, Redux-thunk, Axios, Mat
 
 Implemented: pre-junior page; junior page; junior-plus page; sort, map, select, input, work with date.
 
-## [Link GitHub Pages](https://vladimirgromyko.github.io/my-react-hw-1)
+## [Link GitHub Pages](https://vladimirgromyko.github.io/homework/)
